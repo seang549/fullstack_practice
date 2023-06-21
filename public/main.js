@@ -2,7 +2,7 @@
 
 
 function getAll() {
-    fetch("https://fullstack-practice-seans-way.onrender.com/fs_table")
+    fetch('https://fullstack-practice-seans-way.onrender.com/fs_table')
     .then(response => response.json())
     .then(data => {
         console.log(data)

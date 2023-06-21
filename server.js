@@ -16,7 +16,7 @@ app.use(express.static('public'))
 
 
 app
-    .get('/hello', async (req, res) => {
+    .get('/fs_table', async (req, res) => {
         try {
             const result = await pool.query('SELECT * FROM fs_table');
             res.status(200).json(result.rows);
